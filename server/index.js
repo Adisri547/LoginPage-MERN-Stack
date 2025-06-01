@@ -4,6 +4,7 @@ const cors = require("cors");
 const EmployeeModel = require("./models/Employee");
 
 const app = express();
+const port= process.env.port || 4000
 
 app.use(express.json());
 app.use(cors());
